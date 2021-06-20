@@ -835,7 +835,7 @@ footer .foot-flex .foot h2{
 
 }
 
-@media (max-width: 400px){
+@media (max-width: 480px){
     .logo img{
         width: 7rem;
         margin-left: 1rem;

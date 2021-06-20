@@ -1,0 +1,936 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --smll:'Mulish', sans-serif;
+    --big:'Mulish', sans-serif;
+    --border: 1px;
+    --btn-color: #458FF6;
+    --liner-background1:#67C3F3;
+    --liner-background2:#5A98F2;
+}
+
+body{
+    scroll-behavior: unset;
+}
+
+h1,h3,h2{
+    font-family: var(--big);
+}
+
+p{
+    font-family: var(--smll);
+    line-height: 1.4rem;
+}
+.health-container{
+    width: 70%;
+    margin: 0 auto;
+    max-width: 1100px;
+    min-width: 360px;
+    position: relative;
+}
+
+.health-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.navigation{
+    margin: 1rem 0;
+}
+
+.unlist{
+    display: flex;
+}
+
+.unlist li, a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.toggle{
+    visibility: hidden;
+}
+
+.unlist a{
+    padding-left: 1.5rem;
+    font-family: var(--big);
+}
+
+.dot{
+    position: absolute;
+}
+
+.health-title{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.health-title img{
+    width: 100%;
+    max-width: 130rem;
+}
+
+.health-title .health-text{
+    width: 45%;
+    margin-top: 4rem;
+}
+
+.health-title .health-text h1{
+    font-size: 3rem;
+}
+
+.health-title .health-text p{
+    font-size: 1.1rem;
+    margin-top: 2em;
+}
+
+.health-title .health-photo{
+    width: 50%;
+    margin-right: 0;
+}
+
+.btn{
+    margin-top: 3em;
+    width: 8rem;
+    padding: .7rem;
+    border-radius: 50px;
+    border: 2px solid var(--btn-color);
+    background-color: transparent;
+    color: var(--btn-color);
+    font-size: .8rem;
+    font-family: var(--big);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.btn:hover{
+    background-color: var(--btn-color);
+    color: #fff;
+}
+
+.service-container{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.service-container .line{
+    font-size: 2rem;
+    position: relative;
+}
+
+.service-container .line::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000;
+    width: 3rem;
+    margin: -1rem auto;
+}
+
+.service-container p{
+    margin-top: 2em;
+}
+
+.service-boxs{
+    width: 100%;
+    position: relative;
+}
+
+.service-boxs #bg{
+    width: 50rem;
+    margin-top: -15rem;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+}
+
+.service-boxs #bg2{
+    position: absolute;
+    right: 12.5rem;
+    bottom: 15.8rem;
+    z-index: -1;
+}
+
+.main-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.main-flex .box{
+    width: 18rem;
+    height: 18rem;
+    margin: .7rem;
+    border-radius: .5rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0px 2px 19px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 19px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 19px -8px rgba(0,0,0,0.75);
+}
+
+.main-flex .box-title{
+    margin-top: 2rem;
+}
+
+.main-flex .box-title h1{
+    font-size: 1.5rem;
+}
+
+.main-flex .box-title p{
+    margin-top: 1rem;
+}
+
+.main-flex .box #frame-box{
+    width: 6.5rem;
+}
+
+.main-flex .box .online{
+    width: 4.3rem;
+}
+
+.learn-btn{
+    text-align: center;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5rem;
+    width: 70%;
+    margin: 7rem auto;
+}
+
+.about .healthcare1 img{
+    width: 100%;
+}
+
+.about .healthcare1 #photo{
+    width: 90%;
+}
+
+.about .healthcare{
+    margin-top: 4rem;
+    width: 37%;
+}
+
+.about .healthcare1{
+    width: 58%;
+}
+
+.about .healthcare .line2{
+    font-size: 2rem;
+    position: relative;
+}
+
+.about .healthcare .line2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000;
+    width: 3rem;
+    margin-bottom: -1.5rem;
+}
+
+.about .healthcare{
+   margin-top: 4rem;
+}
+
+.about .healthcare h1{
+    font-size: 2rem;
+    position: relative;
+}
+
+.about .healthcare p{
+    font-size: 1rem;
+    margin-top: 3.5rem;
+}
+
+.about .healthcare h1::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000;
+    margin-bottom: -1em;
+    width: 4rem;
+}
+
+.about .healthcare1{
+    width: 57%;
+}
+
+.about .healthcare4 img{
+    width: 100%;
+}
+
+.new{
+    margin-top: 10rem;
+}
+
+.about-container .bg3{
+    position: absolute;
+    right: 0;
+    margin-top: 25rem;
+}
+
+.costumer-cotainer{
+    width: 70%;
+    height: 50vh;
+    background: linear-gradient(var(--liner-background1), var(--liner-background2));
+    margin: 0 auto;
+    border-radius: 1rem;
+    color: #fff;
+    position: relative;
+}
+
+.costumer-cotainer h1{
+    text-align: center;
+   padding-top: 3rem;
+   position: relative;
+}
+
+.costumer-cotainer h1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #fff;
+    width: 4rem;
+    margin: 0 auto;
+    margin-bottom: -1rem;
+}
+
+.costumer-cotainer .costumer-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:3rem;
+}
+
+.costumer-cotainer .detile{
+    margin-left: 4rem;
+}
+
+.costumer-cotainer .information{
+    width: 40%;
+    font-size: 1rem;
+    margin-left: 8rem;
+}
+
+.costumer-cotainer #photo{
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+
+.costumer-cotainer .first-dot{
+    position: absolute;
+    right: -1.3rem;
+    bottom: 15rem;
+    width: 6rem;
+}
+
+.costumer-cotainer .second-dot{
+    position: absolute;
+    bottom:2rem;
+    left: -3.3rem;
+    width: 4.5rem;
+    z-index: -1;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.buttons .btn-costumer .btn1{
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    margin: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.btn-costumer .fa-chevron-right{
+    pointer-events: none;
+}
+
+.costumer-circle .circle{
+    padding: .3rem;
+    border-radius: 50%;
+    border:none;
+    margin: .3rem;
+}
+
+.costumer-circle .circle1{
+    background-color: var(--btn-color);
+}
+
+.btn-costumer .right-btn{
+    color: rgb(160, 160, 160);
+}
+
+.btn-costumer .left-btn{
+    color: rgb(160, 160, 160);
+}
+
+.blog-container{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.blog-container .elment{
+    position: absolute;
+    top: 4rem;
+    left: -2.4rem;
+    z-index: -1;
+}
+
+.blog-container .elment2{
+    position: absolute;
+    right: -13rem;
+    top: -3rem;
+    width: 30rem;
+    z-index: -1;
+    display: none;
+}
+
+.blog-container .blog-title{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 9rem;
+    position: relative;
+}
+
+.blog-container .blog-title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1.5rem;
+    border: 1px solid #000;
+    width: 3rem;
+    margin: 0 auto;
+}
+
+.blog-container .blog-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.blog-container .blog-flex .box2{
+    width: 18.5rem;
+    height: 28rem;
+    margin: .5rem;
+    background-color: #fff;
+    box-shadow: -1px 9px 17px -9px rgba(0,0,0,0.72);
+    -webkit-box-shadow: -1px 9px 17px -9px rgba(0,0,0,0.72);
+    -moz-box-shadow: -1px 9px 17px -9px rgba(0,0,0,0.72);
+}
+
+.blog-container .blog-flex .image1{
+    background-image: url(../image/check3.png);
+    background-repeat: no-repeat;
+    border-top-right-radius: 1.2rem;
+}
+
+.blog-container .blog-flex .image2{
+    background-image: url(../image/check2.png);
+    background-repeat: no-repeat;
+    border-top-right-radius: 1.2rem;
+}
+
+.blog-container .blog-flex .image3{
+    background-image: url(../image/check1.png);
+    background-repeat: no-repeat;
+    border-top-right-radius: 1.2rem;
+}
+
+.blog-container .blog-flex .box2 h1{
+    margin-top: 16rem;
+    padding:0 1.3rem;
+    font-size: 1.3rem;
+}
+
+.blog-container .blog-flex .box2 p{
+    padding:1rem 1.3rem;
+    font-size: .9rem;
+}
+
+.blog-container .blog-flex .box2 .btn3{
+    background-color: transparent;
+    border: none;
+    padding: 1rem 1rem  1.3rem 1.3rem;
+}
+
+.blog-container .blog-flex .box2 .btn3{
+    margin-top: -2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--big);
+    color: var(--btn-color);
+}
+
+.blog-container .blog-flex .box2 .btn3 i{
+    font-size: 1rem;
+    margin-left: .3rem;
+    color: var(--btn-color);
+}
+
+.last-btn{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    color: #fff;
+    margin-top: 8rem;
+}
+
+footer .foot-dot{
+    position: absolute;
+    right: 10rem;
+    bottom: 20rem;
+    z-index: -1;
+}
+
+footer .new-element{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+footer .foot-flex{
+    display: flex;
+    background:linear-gradient(var(--liner-background1), var(--liner-background2));
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 10rem;
+}
+
+footer .foot-flex .foot-logo p{
+    line-height: 2.5rem;
+}
+
+footer .foot-flex .foot p{
+    line-height: 2.5rem;
+}
+
+footer .foot-flex .foot p a{
+    color: #fff;
+}
+
+footer .foot-flex .foot h2{
+    line-height: 3rem;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 1100px){
+    
+    .health-title{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .health-photo img{
+        margin-top: 4rem;
+    }
+
+    .about{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .about:nth-child(2){
+        flex-direction: column-reverse;
+    }
+
+    .new{
+        margin-top: -1rem;
+    }
+
+    .about .healthcare p{
+        margin-top: 6rem;
+    }
+
+    .about .healthcare .line2::before{
+        margin: -2rem auto;
+    }
+
+    .costumer-cotainer{
+        height: 55%;
+    }
+
+    .costumer-cotainer h1{
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+
+    .costumer-flex{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .costumer-flex #photo{
+        width: 6rem;
+        margin-top: .3rem;
+    }
+
+    .costumer-flex .information{
+        font-size: .7rem;
+    }
+
+    .costumer-flex .detile{
+        margin-left: 1rem;
+    }
+
+    .costumer-flex .detile h3{
+        font-size: 1rem;
+    }
+    #bg,#bg2,
+    .foot-dot,.new-element{
+        display: none;
+    }
+
+    footer .foot-logo{
+        font-size: .7rem;
+    } 
+
+    footer .foot-flex .foot-logo p{
+        line-height: 1.9rem;
+    } 
+
+    footer .foot-flex{
+        padding: 3rem 7rem;
+    }
+
+    footer .foot-flex .foot p{
+        font-size: .8rem;
+        line-height: 1.9rem;
+    }
+
+    footer .foot-flex .foot h2{
+        font-size: .9rem;
+    }
+
+    .unlist{
+        flex-direction: column;
+        justify-content: center;
+        margin: 1.5rem;
+    } 
+
+    .unlist li a{
+        font-size: 1rem;
+        color: #fff;
+        display: block;
+        padding: .4rem;
+    }
+
+    .overflow{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(29, 28, 29, 0.246);
+        transition: all 500ms linear;
+        opacity: 0;
+        display: none;
+    }
+
+    .overflow.open{
+        opacity: 1;
+        display: block;
+    }
+
+    .navigation{
+        position: absolute;
+        left: 0;
+        top: 3rem;
+        width: 100%;
+        height: 0;
+        background:linear-gradient(var(--liner-background1), var(--liner-background2));
+        z-index: 1;
+        overflow: hidden;
+        transition: all 400ms linear;
+    }
+
+    .navigation.open{
+        height: 13rem;
+    }
+
+    .toggle{
+        position: absolute;
+        right: 0;
+        font-size: 1.7rem;
+        margin-top: .5rem;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        visibility: visible;
+    }
+
+}
+
+@media (max-width: 1100px){
+    
+    .health-title .health-text{
+        width: 100%;
+    }
+
+    .health-title .health-photo{
+        width: 100%;
+    }
+
+    .about .healthcare{
+        width: 100%;
+    }
+
+    .about .healthcare1{
+        width: 100%;
+        margin-top: 4rem;
+        margin-left: 0;
+    }
+
+    .costumer-flex{
+        width: 100%;
+    }
+
+    .costumer-flex .information{
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .costumer-flex .detile{
+        margin-top: 1rem;
+    }
+    .costumer-flex .information{
+        margin-top: 1rem;
+    }
+
+    .bg3,.elment{
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px){
+    footer .foot-flex{
+        padding: 5rem 3rem;
+    }
+
+    footer .foot-flex{
+        height: 17rem;
+    }
+}
+
+@media (max-width:600px){
+
+    .health-title .health-text h1{
+        font-size: 2rem;
+    }
+
+    .health-title .health-text p{
+        font-size: 1rem;
+    }
+
+    .service-container .line{
+        font-size: 1.5rem;
+    }
+
+    .service-container p{
+        font-size: .9rem;
+    }
+
+    .about .healthcare .line2{
+        font-size: 1.7rem;
+    }
+
+    .about .healthcare p{
+        font-size: .9rem;
+    }
+
+    footer .foot-flex{
+        padding: 3rem 2rem;
+    }
+
+    footer .foot-flex .foot p{
+        font-size: .5rem;
+        line-height: 1.9rem;
+    }
+
+    footer .foot-flex .foot h2{
+        font-size: .7rem;
+    }
+
+    footer .foot-flex .foot-logo p{
+        line-height: 1.8rem;
+        font-size: .5rem;
+    } 
+
+    footer .foot-logo img{
+        width: 9rem;
+    }
+
+    .costumer-flex .detile{
+        margin-top: 1rem;
+    }
+    .costumer-flex .information{
+        margin-top: 1rem;
+    }
+
+    .first-dot{
+        display: none;
+    }
+
+    footer .foot-flex{
+        height: 13rem;
+    }
+
+    footer .foot-flex .foot-logo img{
+        width: 7rem;
+        padding: .6rem 0;
+    }
+
+    .elment{
+        display: none;
+    }
+
+}
+
+@media (max-width: 360px){
+    .logo img{
+        width: 7rem;
+        margin-left: 1rem;
+        line-height: 1;
+    }
+
+    .toggle{
+        margin-right: 1rem;
+        line-height: 1;
+        margin-top: -.2rem;
+    }
+
+    .health-title .health-text h1{
+        font-size: 1.8rem;
+        margin-top: -5rem;
+    }
+
+    .dot{
+        display: none;
+    }
+
+    .service-container .line{
+        font-size: 1.5rem ;
+    }
+
+    .service-container p{
+        font-size: .8rem ;
+    }
+
+    .service-boxs .box h1{
+        font-size: 1.2rem;
+    }
+
+    .service-boxs .box p{
+        font-size: .8rem;
+    }
+
+    .about .healthcare .line2{
+        font-size: 1.5rem;
+    }
+
+    .about .healthcare p{
+        font-size: .8rem;
+    }
+
+    .first-dot{
+        display: none;
+    }
+
+    .costumer-flex .detile{
+        margin-top: 1rem;
+    }
+    .costumer-flex .information{
+        margin-top: 1rem;
+    }
+
+    .blog-container .blog-title{
+        font-size: 1.5rem;
+    }
+
+    .blog-container .blog-flex .box2 h1{
+        font-size: 1rem;
+    }
+
+    .blog-container .blog-flex .box2 p{
+        font-size: .8rem;
+    }
+
+    .last-btn{
+        margin-top: -1rem;
+    }
+
+    footer .foot-flex .foot-logo img{
+        width: 6rem;
+    }
+
+    footer .foot-flex{
+        padding: 3rem 1rem;
+    }
+
+    footer .foot-flex .foot p{
+        font-size: .4rem;
+        line-height: 1rem;
+    }
+
+    footer .foot-flex .foot h2{
+        font-size: .5rem;
+    }
+
+    footer .foot-flex .foot-logo p{
+        font-size: .4rem;
+        line-height: 1rem;
+    }
+
+    footer .foot-flex{
+        height: 10rem;
+    }
+}
